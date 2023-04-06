@@ -66,7 +66,7 @@ data:
       rlimit:
         nofile: 70000
   api.yaml: |
-    version: "5.8"
+    version: "5.11"
     listeners:
       - port: 80
     environment:
@@ -177,7 +177,7 @@ spec:
         - mountPath: /etc/halon
           name: config
       - name: api
-        image: api:5.8.0
+        image: api:5.11.1
         ports:
         - containerPort: 80
           name: http
